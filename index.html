@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="Portofolio.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="brand-dot"></span>
+                <span>Portofolio</span>
+            </div>
+            <nav class="tab-nav">
+                <button class="tab-btn active" data-tab="beranda">
+                    <span class="tab-icon">🏠</span>
+                    <span class="tab-label">Beranda</span>
+                </button>
+                <button class="tab-btn" data-tab="tentang">
+                    <span class="tab-icon">👤</span>
+                    <span class="tab-label">Tentang</span>
+                </button>
+                <button class="tab-btn" data-tab="keahlian">
+                    <span class="tab-icon">⚡</span>
+                    <span class="tab-label">Keahlian</span>
+                </button>
+                <button class="tab-btn" data-tab="proyek">
+                    <span class="tab-icon">🚀</span>
+                    <span class="tab-label">Proyek</span>
+                </button>
+                <!-- TAB BARU -->
+                <button class="tab-btn" data-tab="kontak">
+                    <span class="tab-icon">📩</span>
+                    <span class="tab-label">Kontak</span>
+                </button>
+            </nav>
+            <div class="sidebar-footer"><p>© 2026</p></div>
+        </aside>
+
+        <main class="main">
+            
+           <!-- TAB: BERANDA -->
+<section class="tab-panel active" id="beranda">
+    <div class="panel-inner">
+        <div class="hero-card hero-with-photo">
+            <div class="hero-content">
+                <div class="hero-greeting">
+                    <span class="wave">👋</span>
+                    <span>Halo, selamat datang</span>
+                </div>
+                <h1 class="hero-name">Mikhel</h1>
+                <p class="hero-role">
+                    <span class="role-badge">Siswa RPL SMKN 4 Batam</span>z
+                    <span class="role-divider">•</span>
+                    <span class="role-badge">UI Designer Pemula</span>
+                </p>
+                <p class="hero-desc">
+                    Saya Pemula yang Mencoba membangun antarmuka web yang bersih, responsif, dan berpusat pada pengguna. 
+                    Berfokus pada detail kecil yang membuat pengalaman digital terasa menyenangkan.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="switchTab('proyek')">Lihat Proyek</button>
+                    <button class="btn btn-ghost" onclick="switchTab('tentang')">Kenali Saya</button>
+                </div>
+            </div>
+            <div class="hero-photo-wrap">
+                <div class="hero-photo-ring">
+                    <img src="Mikhel.png" alt="Foto Profil Mikhel" class="hero-photo-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-stats">
+            <div class="q-stat">
+                <span class="q-num">1,5+</span>
+                <span class="q-label">Tahun</span>
+            </div>
+            <div class="q-stat">
+                <span class="q-num">7</span>
+                <span class="q-label">Proyek</span>
+            </div>
+            <div class="q-stat">
+                <span class="q-num">100+</span>
+                <span class="q-label">Teh obeng</span>
+            </div>
+        </div>
+
+        <div class="featured-preview" onclick="switchTab('proyek')">
+            <div class="preview-img">🛒</div>
+            <div class="preview-info">
+                <span class="preview-tag">Terbaru</span>
+                <h4>Proyek Yang Pernah Dikerjakan</h4>
+                <p>Beberapa proyek HTML Seperti Landing Page dan Desain Web</p>
+            </div>
+            <span class="preview-arrow">→</span>
+        </div>
+    </div>
+</section>
+            <!-- TAB: TENTANG -->
+            <section class="tab-panel" id="tentang">
+                <div class="panel-inner">
+                    <div class="about-header">
+                        <div class="about-photo">🧑‍💻</div>
+                        <div class="about-intro">
+                            <h2>Tentang Saya</h2>
+                            <p>Siswa RPL SMKN 4 Indonesia (Calon Frontend Dev Jago)</p>
+                        </div>
+                    </div>
+                    <div class="about-story">
+                        <p>Perjalanan saya dimulai dari sejak saya masuk Sekolah SMKN Jurusan RPL, 
+                        Saya tertarik membuat sebuah website bisa tampil di layar? Dari situ, saya menjelajahi HTML, CSS, dan JavaScript terus mempelajari ketiga Bahasa kodingan tersebut.</p>
+                        <p>Saya percaya bahwa kode yang baik adalah kode yang bisa dibaca dan dirawat. 
+                        Setiap proyek adalah kesempatan untuk belajar, berkembang, dan memberikan solusi terbaik bagi pengguna.</p>
+                    </div>
+                    <div class="about-traits">
+                        <div class="trait"><span class="trait-ico">🎯</span><h4>Fokus</h4><p>Menyelesaikan masalah dengan solusi sederhana</p></div>
+                        <div class="trait"><span class="trait-ico">🔍</span><h4>Detail</h4><p>Memperhatikan setiap piksel dan interaksi</p></div>
+                        <div class="trait"><span class="trait-ico">📚</span><h4>Belajar</h4><p>Saya sangat suka hal yang Menarik dan Selalu haus akan pengetahuan baru</p></div>
+                        <div class="trait"><span class="trait-ico">🤝</span><h4>Kolaborasi</h4><p>Bekerja sama dengan teman untuk hasil terbaik</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB: KEAHLIAN -->
+            <section class="tab-panel" id="keahlian">
+                <div class="panel-inner">
+                    <div class="skills-header">
+                        <h2>Stack Teknologi</h2>
+                        <p>Alat dan teknologi yang saya gunakan sehari-hari</p>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-row">
+                            <div class="skill-info">
+                                <span class="skill-ico">🌐</span>
+                                <div class="skill-text"><h4>HTML & CSS</h4><p>Semantic markup, Flexbox, Grid</p></div>
+                            </div>
+                            <div class="skill-bar-wrap"><div class="skill-track"><div class="skill-fill" style="--width:65%"></div></div></div>
+                            <span class="skill-pct">65%</span>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-info">
+                                <span class="skill-ico">⚡</span>
+                                <div class="skill-text"><h4>JavaScript</h4><p>ES6+, DOM, Async</p></div>
+                            </div>
+                            <div class="skill-bar-wrap"><div class="skill-track"><div class="skill-fill" style="--width:40%"></div></div></div>
+                            <span class="skill-pct">40%</span>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-info">
+                                <span class="skill-ico">🎨</span>
+                                <div class="skill-text"><h4>UI Design</h4><p>Canva, Capcut</p></div>
+                            </div>
+                            <div class="skill-bar-wrap"><div class="skill-track"><div class="skill-fill" style="--width:80%"></div></div></div>
+                            <span class="skill-pct">80%</span>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-info">
+                                <span class="skill-ico">🛠️</span>
+                                <div class="skill-text"><h4>Tools</h4><p>Git, VS Code, Microsoft Office</p></div>
+                            </div>
+                            <div class="skill-bar-wrap"><div class="skill-track"><div class="skill-fill" style="--width:88%"></div></div></div>
+                            <span class="skill-pct">88%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB: PROYEK -->
+            <section class="tab-panel" id="proyek">
+                <div class="panel-inner">
+                    <div class="projects-header"><h2>Karya Yang Pernah Dikerjakan</h2> <p>Kalo Mau Mengunjungi Web Klik gambar</p></div>
+                   
+                    <div class="projects-grid">
+                        <!-- Card 1 -->
+                        <div class="project-card">
+                            <h3 class="project-title">Kell Dev</h3>
+                            <a href="https://chintyaaja.github.io/KellDev/" target="_blank" class="project-img-link">
+                                <div class="project-img-box">
+                                    <img src="Landing page.png" alt="Karya Satu" class="project-photo">
+                                </div>
+                            </a>
+                            <div class="project-desc-box">
+                                <p>Platform e-commerce untuk UMKM dengan fitur katalog, keranjang, dan dashboard admin.</p>
+                                <div class="project-tags"><span>HTML</span><span>CSS</span><span>Java Script</span></div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="project-card">
+                            <h3 class="project-title">Dicoding Dassboard</h3>
+                            <a href="https://chintyaaja.github.io/dicoding/" target="_blank" class="project-img-link">
+                                <div class="project-img-box">
+                                    <img src="Dicoding.png" alt="Karya 2" class="project-photo">
+                                </div>
+                            </a>
+                            <div class="project-desc-box">
+                                <p>Dassboard Dasar dari Landing Page Dicoding.</p>
+                                <div class="project-tags"><span>HTML</span><span>CSS</span><span>Java Script</span></div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="project-card">
+                            <h3 class="project-title">Ringkasan Bandung</h3>
+                            <a href="https://chintyaaja.github.io/Bandung-Dicoding-/" target="_blank" class="project-img-link">
+                                <div class="project-img-box">
+                                    <img src="Bandung.png" alt="Karya Tiga" class="project-photo">
+                                </div>
+                            </a>
+                            <div class="project-desc-box">
+                                <p>Dassboard yang menceritakan tentang sejarah,latar belakang dan keindahan alam Bandung.</p>
+                                <div class="project-tags"><span>HTML</span><span>CSS</span><span>Java Script</span></div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="project-card">
+                            <h3 class="project-title">Yupinterest</h3>
+                            <a href="https://chintyaaja.github.io/gyjj/" target="_blank" class="project-img-link">
+                                <div class="project-img-box">
+                                    <img src="Yupinterest.png" alt="Karya Empat" class="project-photo">
+                                </div>
+                            </a>
+                            <div class="project-desc-box">
+                                <p>Platform berbagi dan menemukan gambar inspirasi dengan layout Masonry Grid seperti Pinterest. Dibangun sebagai proyek latihan frontend dengan fokus pada grid layout dan UI/UX modern.</p>
+                                <div class="project-tags"><span>HTML</span><span>CSS</span><span>Java Script</span></div>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="project-card">
+                            <h3 class="project-title">Pesona Raja Empat</h3>
+                            <a href="https://chintyaaja.github.io/Pesona-Raja-empat/" target="_blank" class="project-img-link">
+                                <div class="project-img-box">
+                                    <img src="Pesona raja empat.png" alt="Karya Lima" class="project-photo">
+                                </div>
+                            </a>
+                            <div class="project-desc-box">
+                                <p>Landing page promosi destinasi wisata Raja Ampat, Papua Barat. Dibangun sebagai proyek akhir kursus Belajar Dasar Pemrograman Web dari Dicoding Academy.</p>
+                                <div class="project-tags"><span>HTML</span><span>CSS</span><span>Java Script</span></div>
+                            </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="project-card">
+                            <h3 class="project-title">Bookshelf</h3>
+                            <a href="https://chintyaaja.github.io/bookshelf/" target="_blank" class="project-img-link">
+                                <div class="project-img-box">
+                                    <img src="Bookshelf.png" alt="Karya Enam" class="project-photo">
+                                </div>
+                            </a>
+                            <div class="project-desc-box">
+                                <p>Desain UI aplikasi mobile dengan prototype interaktif.</p>
+                                <div class="project-tags"><span>HTML</span><span>CSS</span><span>Java Script</span></div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <h3 class="project-title">Skamath</h3>
+                            <a href="https://chintyaaja.github.io/skamath1/" target="_blank" class="project-img-link">
+                                <div class="project-img-box">
+                                    <img src="skamath.jpeg" alt="Karya Enam" class="project-photo">
+                                </div>
+                            </a>
+                            <div class="project-desc-box">
+                                <p>Desain UI aplikasi mobile dengan prototype interaktif.</p>
+                                <div class="project-tags"><span>HTML</span><span>CSS</span><span>Java Script</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB BARU: KONTAK -->
+            <section class="tab-panel" id="kontak">
+                <div class="panel-inner">
+                    <div class="contact-header">
+                        <h2>Mari Terhubung</h2>
+                        <p>Ada ide menarik? Mari diskusi dan bangun sesuatu yang keren bersama.</p>
+                    </div>
+                    <div class="contact-grid">
+                        <a href="https://www.instagram.com/khelaja_/" target="_blank" class="contact-card">
+                            <span class="contact-ico">📸</span>
+                            <h4>Instagram</h4>
+                            <p>@khelaja_</p>
+                            <span class="contact-arrow">→</span>
+                        </a>
+                        <a href="https://mail.google.com/" target="_blank" class="contact-card">
+                            <span class="contact-ico">✉️</span>
+                            <h4>Gmail</h4>
+                            <p>chintyapangabean@gmail.com</p>
+                            <span class="contact-arrow">→</span>
+                        </a>
+                        <a href="https://wa.me/6281276435336" target="_blank" class="contact-card">
+                            <span class="contact-ico">💬</span>
+                            <h4>WhatsApp</h4>
+                            <p>+62 812 7643 5336 - Mikhel</p>
+                            <span class="contact-arrow">→</span>
+                        </a>
+                        <a href="https://web.facebook.com/profile.php?id=100041077963974" target="_blank" class="contact-card">
+                            <span class="contact-ico">👍</span>
+                            <h4>Facebook</h4>
+                            <p>Laice Laice</p>
+                            <span class="contact-arrow">→</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mikhel-undefined-a02b64340/" target="_blank" class="contact-card">
+                            <span class="contact-ico">💼</span>
+                            <h4>LinkedIn</h4>
+                            <p>Mikhel</p>
+                            <span class="contact-arrow">→</span>
+                        </a>
+                        <a href="https://www.dicoding.com/users/mikhel_ljwx/academies" target="_blank" class="contact-card">
+                            <span class="contact-ico">💻</span>
+                            <h4>Profil Dicoding</h4>
+                            <p>Mikhel</p>
+                            <span class="contact-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="Portofolio2.js"></script>
+</body>
+</html>
